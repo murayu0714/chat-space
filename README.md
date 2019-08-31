@@ -24,7 +24,6 @@ Things you may want to cover:
 * ...
 
 # DB設計
-
 ## usersテーブル
 
 |Column|Type|Options|
@@ -47,7 +46,6 @@ Things you may want to cover:
 - has_many :users, through: :groups_users
 - has_many :messages
 
-
 ## groups_usersテーブル
 
 |Column|Type|Options|
@@ -62,7 +60,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
