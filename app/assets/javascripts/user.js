@@ -13,12 +13,13 @@ function appendUser(user) {
 
 $('#user-search-field').on('keyup', function(e){
   e.preventDefault();
-  var input = $('.chat-group-form__input').val();
+  $("#user-search-result").empty();
+  var input = $('#user-search-field').val();
 
   $.ajax({
     url: '/users',
     type: "GET",
-    data: { keyword: input },
+    data: { name: input },
     dataType: 'json',
   })
 

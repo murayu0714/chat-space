@@ -47,7 +47,11 @@ $(function(){
 
   .fail(function(){
     alert('error');
+  })
+
+  .always(function(){
+    $('.form__submit').prop('disabled', false);
   });
-    return false;
+  
   });
 });
